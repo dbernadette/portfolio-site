@@ -53,6 +53,10 @@ p {
   color: white;
 }
 
+.navigation-link-main:hover {
+  color: white;
+}
+
 .navigation-link-support {
   border-radius: 4px;
   padding: 20px 15px;
@@ -60,6 +64,10 @@ p {
   text-transform: capitalize;
   color: var(--primary-color);
   border: 1px solid var(--primary-color);
+}
+
+.navigation-link-support:hover {
+  color: var(--primary-color);
 }
 
 .weather-app {
@@ -81,6 +89,7 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+  color: var(--primary-color);
 }
 
 @media (max-width: 650px) {
@@ -93,9 +102,7 @@ p {
   h3 {
     font-size: 16px;
   }
-  p {
-    font-size: 12px;
-  }
+
   img {
     display: block;
     max-width: 75% !important;
@@ -110,15 +117,17 @@ p {
     margin-top: 25px !important;
   }
   .navigation-link-main {
-    font-size: 11px;
     padding: 15px 13px;
   }
   .navigation-link-support {
-    font-size: 11px;
     padding: 15px 13px;
   }
   .app-examples h2 {
     margin-top: 20px !important;
+    text-align: center;
+  }
+  .app-examples p {
+    text-align: center;
   }
   .email-link {
     font-size: 19px;
