@@ -62,8 +62,13 @@ p {
   border: 1px solid var(--primary-color);
 }
 
+.weather-app {
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
 .about-paragraphs {
-  margin: 30px 10px;
+  margin: 15px 10px;
 }
 
 .email-link {
@@ -76,4 +81,64 @@ p {
 
 .email-link:hover {
   text-decoration: underline;
+}
+
+@media (max-width: 650px) {
+  h1 {
+    font-size: 64px;
+  }
+  h2 {
+    font-size: 32px;
+  }
+  h3 {
+    font-size: 16px;
+  }
+  p {
+    font-size: 12px;
+  }
+  img {
+    display: block;
+    max-width: 75% !important;
+    margin: 0 auto;
+  }
+  .navigation-links {
+    margin-top: 27px;
+    margin-bottom: 32px !important;
+  }
+  .app-links {
+    text-align: center;
+    margin-top: 25px !important;
+  }
+  .navigation-link-main {
+    font-size: 11px;
+    padding: 15px 13px;
+  }
+  .navigation-link-support {
+    font-size: 11px;
+    padding: 15px 13px;
+  }
+  .app-examples h2 {
+    margin-top: 20px !important;
+  }
+  .email-link {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 470px) {
+  h1 {
+    font-size: 60px;
+  }
+}
+
+@media (max-width: 300px) {
+  img {
+    display: none;
+  }
+  h1 {
+    font-size: 43px;
+  }
+  h2 {
+    font-size: 23px;
+  }
 }
